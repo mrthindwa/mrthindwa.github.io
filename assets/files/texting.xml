@@ -1,0 +1,52 @@
+<!-- 
+	Project: First portfolie xml document used by my github pages website
+	Author: Felix Thindwa
+	Version: v2021.1
+	purpose: personal portfoliio
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+   <portfoliio>
+	   <!-- Basic personal information -->
+   		<personal>
+			<profiile_url>Link the picture location</profiile_url>
+   			<firstname>Felix</firstname>
+   			<lastname>Thindwa</lastname>
+   			<profession>Web Developer</profession>
+   			<facebook></facebook>
+			<twitter></twitter>
+			<github></githun>
+   			<course>Computer Systems Engineering</course>
+		</personal>
+
+		<!-- About me -->
+		<about>
+			<para_1>I have some interesting thoughts have need to be shared with the entire world</para_1>
+			<para_2>I still have much more to share and be proud of. Life is hard, but we keep going hard</para_2>
+		</about>
+
+		<!-- Education -->
+		<education>
+			<diploma>
+				<start_date>2010</start_date>
+				<end_date>2013</end_date>
+				<institution>Northern Technical College</institution>
+				<qualification>Computer Sytems Engineering </qualification>
+				<level>Diploma</level>
+			</diploma>
+		</education>
+
+		<!-- Skills -->
+		<skills>
+			<php>PHP</php>
+			<javascript>javascript</javascript>
+			<html5>HTML 5</html5>
+			<css3>CSS 3</css3>
+			<inkscape>Inkscape</inkscape>
+		</skills>
+
+		<employment>
+			
+		</employment>
+
+	</portfoliio>

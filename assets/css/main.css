@@ -1,46 +1,173 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-html,
-body {
-    width: 100%;
-    height: 100vh;
-}
-
-body {
-    background-color: rgb(3 13 23 / 92%);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.2em;
-    letter-spacing: 0.2px;
-    line-height: 120%;
-    color: rgb(151 175 164 / 92%);
-}
-
-
-/* main contatiner */
-
-.main-container {
-    height: 100vh;
-    width: 80%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    justify-content: center;
-    align-content: center;
-}
-
-.main-container h1 {
-    font-size: 3em;
-    width: 100%;
-}
-
-.main-container p {
-    text-align: center;
-    margin-top: 0.6em;
-    font-size: 1.2em;
-    width: 100%;
-}
+    /* Universal */
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    body {
+        font-family: corbel, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.2em;
+        letter-spacing: 0.2px;
+        background-color: rgb(255, 255, 255);
+        color: rgba(31, 36, 28, 100%);
+        background-image: url('../images/pattern.svg');
+        background-size: 100% 100%;
+        background-position: fixed;
+        background-repeat: no-repeat;
+    }
+    /* main contatiner */
+    
+    .main-container {
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(255, 212, 42, 15.2%);
+        overflow-x: hidden;
+    }
+    /* === The header === */
+    
+    header {
+        background-color: rgba(14, 2, 2, 0.739);
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto;
+        width: 70%;
+        margin: auto;
+        padding: 1em 0;
+        justify-content: center;
+        align-items: center;
+        transition: grid-template-rows .5s;
+    }
+    /* Profile image */
+    
+    #profile-image {
+        width: 270px;
+        height: 270px;
+        border-radius: 50%;
+        margin: auto;
+        background-image: url(../images/logo.png);
+        background-size: cover;
+        transition: width .7s, height .7s;
+    }
+    /* name and job title */
+    
+    #name-profession {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        justify-content: center;
+        justify-items: center;
+        color: rgb(219, 223, 219);
+    }
+    
+    @media screen and (max-width: 850px) {
+        .container {
+            width: 90%;
+            padding: 1em;
+        }
+        #profile-image {
+            width: 190px;
+            height: 190px;
+            transition: all .7s;
+        }
+    }
+    
+    @media screen and (max-width: 595px) {
+        .container {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+        }
+    }
+    
+    @media screen and (max-width: 595px) {
+        .container {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+        }
+    }
+    
+    @media screen and (max-width: 595px) {
+        #name-profession {
+            font-size: 85%;
+        }
+    }
+    /* The navigation */
+    
+    nav {
+        width: 100%;
+        background-image: linear-gradient(to right, rgba(128, 51, 0, 0.9), rgba(200, 171, 55, 0.9));
+        overflow: auto;
+        white-space: nowrap;
+    }
+    
+    nav::-webkit-scrollbar {
+        display: none;
+    }
+    
+    nav ul {
+        width: 70%;
+        margin: auto;
+    }
+    
+    nav li {
+        list-style: none;
+        padding: 0.7em 0;
+        display: inline-block;
+    }
+    
+    nav a {
+        color: rgba(215, 244, 215);
+        text-decoration: none;
+        padding: 1.2em;
+        transition: background-color .3s;
+        text-transform: uppercase;
+        font-size: 80%;
+    }
+    
+    nav a:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgba(14, 2, 2, .89);
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+    }
+    
+    @media screen and (max-width: 1210px) {
+        nav ul {
+            width: 80%;
+        }
+    }
+    
+    @media screen and (max-width: 864px) {
+        nav ul {
+            width: 90%;
+            justify-content: space-between;
+        }
+    }
+    /* Details */
+    
+    section {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        padding-top: 1em;
+    }
+    
+    section h1 {
+        font-size: 5em;
+        text-transform: uppercase;
+        text-align: center;
+    }
